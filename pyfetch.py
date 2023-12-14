@@ -11,7 +11,7 @@ def format_uptime(seconds):
     minutes, _ = divmod(remainder, 60)
     return f"{int(hours)} hours, {int(minutes)} mins"
 
-# Part code is by "Lorago", Taken from Vfetch project https://github.com/Lorago/vfetch/blob/master/vfetch.py 
+# Part of this function is by "Lorago", Taken from Vfetch project https://github.com/Lorago/vfetch/blob/master/vfetch.py 
 # thank you for this awesome project <3
 def getPackages(display_package_manager=False, based_on=''):
     try:
@@ -113,5 +113,5 @@ print(f"{Fore.RED}{Style.BRIGHT}╭───── Hardware {Style.RESET_ALL}:")
 print(f"{Fore.RED}{Style.BRIGHT}├ CPU: {Style.RESET_ALL}: {get_cpu_model()}")
 print(f"{Fore.RED}{Style.BRIGHT}├ GPU: {Style.RESET_ALL}: {get_gpu_info()}")
 print(f"{Fore.RED}{Style.BRIGHT}├ RAM: {Style.RESET_ALL}: {get_ram_info()}")
-print(f"{Fore.RED}{Style.BRIGHT}╰ Resolution: {Style.RESET_ALL}: {get_monitor_resolution()}")
+print(f"{Fore.RED}{Style.BRIGHT}╰─ Resolution: {Style.RESET_ALL}: {get_monitor_resolution()}")
 #----------------------------------------------------------------------
